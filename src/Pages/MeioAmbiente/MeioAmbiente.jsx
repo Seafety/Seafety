@@ -1,9 +1,12 @@
-const MeioAmbiente = () => {
+import React from 'react'
+import PropTypes from 'prop-types'
+
+const MeioAmbiente = props => {
   return (
-    <h1>
-      Meio Ambiente
-    </h1>
+    <div>MeioAmbiente</div>
   )
 }
 
-export default MeioAmbiente;
+MeioAmbiente.propTypes = {}
+
+export default MeioAmbiente

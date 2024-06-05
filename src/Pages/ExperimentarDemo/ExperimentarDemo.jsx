@@ -1,9 +1,12 @@
-const ExperimentarDemo = () => {
+import React from 'react'
+import PropTypes from 'prop-types'
+
+const ExperimentarDemo = props => {
   return (
-    <h1>
-      ExperimentarDemo
-    </h1>
+    <div>ExperimentarDemo</div>
   )
 }
 
-export default ExperimentarDemo ;
+ExperimentarDemo.propTypes = {}
+
+export default ExperimentarDemo

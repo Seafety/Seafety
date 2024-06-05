@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import './index.scss'
+import './ui/sass/index.scss'
 import Router from './router.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
