@@ -1,26 +1,37 @@
-import './App.css'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import HomePage from './Pages/HomePage/HomePage'
+import MeioAmbiente from './Pages/MeioAmbiente/MeioAmbiente'
+import TubAI from './Pages/TubAI/TubAI'
+import Documentacao from './Pages/Documentacao/Documentacao'
+import Header from './ui/Components/Header/Header'
+import Footer from './ui/Components/Footer/Footer'
+import ExperimentarDemo from './Pages/ExperimentarDemo/ExperimentarDemo'
 
 function Router() {
 
   return (
     <BrowserRouter>
+    <Header />
       <Routes>
-        {/* <Route path="/" element={<HomePage />} />
+        <Route path="/" element={<HomePage />} />
         <Route
-          path="/Tratamento-Doencas-Nao-Transmissiveis"
-          element={<TratamentoDoencasNaoTransmissiveis />}
+          path="/Meio-Ambiente"
+          element={<MeioAmbiente />}
         />
         <Route
-          path="/Melhoria-Geral-Da-Saude"
-          element={<MelhoriaGeralSaude />}
+          path="/TubAI"
+          element={<TubAI/>}
         />
         <Route
-          path="/Prevencao-Doenca-Transmissiveis"
-          element={<DoencaTransmissiveis />}
+          path="/Documentacao"
+          element={<Documentacao />}
         />
-        <Route path="/Mortalidade-Infatil" element={<MortalidadeInfatil />} /> */}
+        <Route
+          path="/Demo"
+          element={<ExperimentarDemo />}
+        />
       </Routes>
+      <Footer />
     </BrowserRouter>
   )
 }
