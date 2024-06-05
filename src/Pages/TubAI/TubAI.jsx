@@ -1,9 +1,12 @@
-const TubAI = () => {
+import React from 'react'
+import PropTypes from 'prop-types'
+
+const TubAI = props => {
   return (
-    <h1>
-      TubAI
-    </h1>
+    <div>TubAI</div>
   )
 }
 
-export default TubAI;
+TubAI.propTypes = {}
+
+export default TubAI

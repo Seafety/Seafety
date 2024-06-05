@@ -3,8 +3,8 @@ import HomePage from './Pages/HomePage/HomePage'
 import MeioAmbiente from './Pages/MeioAmbiente/MeioAmbiente'
 import TubAI from './Pages/TubAI/TubAI'
 import Documentacao from './Pages/Documentacao/Documentacao'
-import Header from './ui/Components/Header/Header'
-import Footer from './ui/Components/Footer/Footer'
+import Header from './ui/Components/Header'
+import Footer from './ui/Components/Footer'
 import ExperimentarDemo from './Pages/ExperimentarDemo/ExperimentarDemo'
 
 function Router() {
