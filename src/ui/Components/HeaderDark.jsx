@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 import Botao from "./Botao";
 
-import SeafetyLogo from "../../Assets/Seafety.svg";
+import SeafetyWhite from "../../Assets/SeafetyWhite.svg";
 
 const HeaderDark = (props) => {
   const navigate = useNavigate();
@@ -13,7 +13,7 @@ const HeaderDark = (props) => {
     <header data-theme="dark" style={{ backgroundColor: 'rgba(0, 0, 0, 0.836)' }} >
       <img
         onClick={() => navigate("/")}
-        src={SeafetyLogo}
+        src={SeafetyWhite}
         alt=""
         srcset=""
         className="img-seafety"
