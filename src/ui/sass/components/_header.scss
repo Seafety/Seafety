@@ -1,5 +1,4 @@
-
-header{
+header {
   width: 100%;
   height: auto;
   backdrop-filter: blur(7.5px);
@@ -7,34 +6,55 @@ header{
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding: 1.5rem 7%;
-  .img-seafety{
-    width: 10rem;
-    height: auto;
-  }
-
-  .nav-ul{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 4rem;
-    li{
-      list-style: none;
-      color: var(--accent-color1);
-      font-family: var(--font-family);
-      font-size: 1.3rem;
-      font-style: normal;
-      font-weight: 500;
-      line-height: normal;
-    }
-
-    .active {
-      color: #0182FE;
-      font-size: 1.3rem;
-      font-style: normal;
-      font-weight: 600;
-      line-height: normal;
-    }
-  }
+  padding: 0.5rem 7%;
 }
 
+.img-seafety {
+  width: 10rem;
+  height: auto;
+  cursor: pointer;
+}
+
+nav ul.nav-ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 3rem;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul.nav-ul li {
+  list-style: none;
+  color: var(--accent-color1);
+  font-family: var(--font-family);
+  font-size: 1.1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  height: 90px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid transparent;
+  transition: border-color .3s cubic-bezier(.77, 0, .175, 1); 
+  
+}
+
+nav ul.nav-ul li:hover {
+  border-bottom-color: #0182FE; 
+  color: rgb(73, 73, 73)
+}
+
+nav ul.nav-ul li.active {
+  color: #0182FE;
+  font-size: 1.1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+nav ul.nav-ul li:last-child {
+  border-bottom: none; /* Remove a borda inferior do último li */
+}
