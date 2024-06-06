@@ -1,8 +1,9 @@
-import React from 'react'
+import React, { Children } from 'react'
+import PropTypes from 'prop-types'
 
-function Botao() {
+const Botao = ({children}) => {
   return (
-    <div>Botao</div>
+    <button type="button" className='blue-button'>{children}</button>
   )
 }
 
