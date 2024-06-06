@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import { Link } from "react-router-dom";
 
 import icon1 from '../../Assets/PageAssets/icon1.png'
 import icon2 from '../../Assets/PageAssets/icon2.png'
@@ -17,7 +18,6 @@ const MeioAmbiente = props => {
   return (
     <body data-theme="dark">
     <div className='meio-ambiente'>
-      <h1 className='title-ma'>Seafety no Meio Ambiente</h1>
       <div className='box-video'>
         <video className='video-ma' preload="auto" autoplay="" loop muted playsInline>
           <source src='https://s3-figma-videos-production-sig.figma.com/video/1359687156048822209/TEAM/4787/3453/-9379-4afc-a029-99fa26f269d8?Expires=1718582400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=fgbN20-cEns-6S1t3DDt9xhKBU-ipLGL6wXasGr2EaUD7WFMzppb7YxO83iIBWUuGFKI9A8PWLvLOYOeUCGzKWlTp7b2tG0MWKyyFfcngR3Fsq7Wq6c6phLwPHiNKTArYMpleW71ND~9B0jLJmA4~KmS0PXrYWzJ8QgBwhzaWSGnDZsLb4Ls4H1ZALt63m7Q-0hVgWiUgxN~FgUoadvSK-VQzNoAE3-V4XvZQTHCl5~js6CtROZHHPkW7d4PdMxcoPcWIcl88ifB6qPgM1jdTneLeeGRST-ndkvxKH395j9useyFk8oZcVjVJ4kvasz1Xi~YIvL-GGXvGzp7z-tSZg__' type="video/mp4"></source>
@@ -60,15 +60,15 @@ const MeioAmbiente = props => {
         <div className='text-container'>
         <h4>Nos comprometemos em promover a conscientização ambiental e educação</h4>
         <p>Nossa plataforma de inteligência artificial é acessível ao público, permitindo que qualquer pessoa acompanhe a segurança marítima e a sustentabilidade dos oceanos, utilizando dados e previsões avançadas para se envolver ativamente na causa da conservação.</p>
-        <button className='dark-button'>TubAI</button>
+        <Link to="/TubAI"><button className='dark-button'>TubAI</button></Link>
       </div></div>
       <div className='box-text'>
         <div className='text-container'>
           <h4>Promovemos a segurança e a eficiência no transporte marítimo</h4>
           <p>Nossa plataforma de inteligência artificial oferece aos marinheiros acesso a dados precisos e previsões avançadas, permitindo a escolha das melhores rotas e garantindo operações mais seguras e eficientes.</p>
         <div className='darkbuttons'>
-          <button className='dark-button'>Seafety</button>
-          <button className='dark-button'>Documentação</button>
+          <Link to="/HomePage"><button className='dark-button'>Seafety</button></Link>
+          <Link to="/Documentacao"><button className='dark-button'>Documentação</button></Link>
         </div>
         </div>
         <img src={boycode} />

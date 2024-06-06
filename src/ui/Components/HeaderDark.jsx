@@ -10,7 +10,7 @@ const HeaderDark = (props) => {
   const navigate = useNavigate();
   const [activeLink, setActiveLink] = useState("");
   return (
-    <header style={{ backgroundColor: 'rgba(0, 0, 0, 0.836)' }} >
+    <header data-theme="dark" style={{ backgroundColor: 'rgba(0, 0, 0, 0.836)' }} >
       <img
         onClick={() => navigate("/")}
         src={SeafetyLogo}
@@ -21,7 +21,7 @@ const HeaderDark = (props) => {
 
       <nav>
         <ul  className="nav-ul">
-          <li style={{ color: 'white' }}
+          <li
             className={activeLink === "/Demo" ? "active" : ""}
             onClick={() => {
               navigate("/Demo");
@@ -30,7 +30,7 @@ const HeaderDark = (props) => {
           >
             Demo
           </li>
-          <li style={{ color: 'white' }}
+          <li
             className={activeLink === "/Meio-Ambiente" ? "active" : ""}
             onClick={() => {
               navigate("/Meio-Ambiente");
@@ -39,7 +39,7 @@ const HeaderDark = (props) => {
           >
             Meio Ambiente
           </li>
-          <li style={{ color: 'white' }}
+          <li
             className={activeLink === "/TubAI" ? "active" : ""}
             onClick={() => {
               navigate("/TubAI");
@@ -48,7 +48,7 @@ const HeaderDark = (props) => {
           >
             TubAI
           </li>
-          <li style={{ color: 'white' }}
+          <li
             className={activeLink === "/Documentacao" ? "active" : ""}
             onClick={() => {
               navigate("/Documentacao");
@@ -57,21 +57,10 @@ const HeaderDark = (props) => {
           >
             Documentação
           </li>
-          <li style={{ color: 'white' }}
-            // className={activeLink === "/Meio-Ambiente" ? "active" : ""}
-            // onClick={() => {
-            //   navigate("/");
-            //   setActiveLink("/Demo");
-            // }}
-          >
+          <li>
             Contato
           </li>
           <li
-            // className={activeLink === "/Meio-Ambiente" ? "active" : ""}
-            // onClick={() => {
-            //   navigate("/Demo");
-            //   setActiveLink("/Demo");
-            // }}
           >
             <Botao>Entrar</Botao>
           </li>
