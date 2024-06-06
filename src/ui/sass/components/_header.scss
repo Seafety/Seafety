@@ -1,0 +1,40 @@
+
+header{
+  width: 100%;
+  height: auto;
+  backdrop-filter: blur(7.5px);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 7%;
+  .img-seafety{
+    width: 10rem;
+    height: auto;
+  }
+
+  .nav-ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 4rem;
+    li{
+      list-style: none;
+      color: var(--accent-color1);
+      font-family: var(--font-family);
+      font-size: 1.3rem;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+    }
+
+    .active {
+      color: #0182FE;
+      font-size: 1.3rem;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+    }
+  }
+}
+
