@@ -18,4 +18,9 @@
   .footer-layout{
     grid-area: footer;
   }
+
+  &.dark-theme {
+    background-color: black; // Aplica o fundo escuro
+    color: white; // Aplica a cor do texto escuro
+}
 }

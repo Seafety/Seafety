@@ -12,7 +12,7 @@ function Router() {
       <Layout>
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="/Meio-Ambiente" element={<MeioAmbiente />} />
+          <Route  path="/Meio-Ambiente" element={<MeioAmbiente />} />
           <Route path="/TubAI" element={<TubAI />} />
           <Route path="/Documentacao" element={<Documentacao />} />
           <Route path="/Demo" element={<ExperimentarDemo />} />

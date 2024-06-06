@@ -1,12 +1,16 @@
 header {
   width: 100%;
   height: auto;
-  backdrop-filter: blur(7.5px);
+  backdrop-filter: blur(5.5px);
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding: 0.5rem 7%;
+  padding: 0.4rem 7%;
+  position: fixed;
+  z-index: 1 !important;
+  background-color: var(--headercolor);
+}
 
   .img-seafety {
     width: 10rem;
@@ -55,4 +59,4 @@ header {
       border-bottom: none; /* Remove a borda inferior do último li */
     }
   }
-}
+
