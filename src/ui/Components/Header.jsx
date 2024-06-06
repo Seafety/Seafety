@@ -8,18 +8,71 @@ import SeafetyLogo from "../../Assets/Seafety.svg";
 
 const Header = (props) => {
   const navigate = useNavigate();
+  const [activeLink, setActiveLink] = useState("");
   return (
     <header>
-      <img src={SeafetyLogo} alt="" srcset="" className="img-seafety" />
+      <img
+        onClick={() => navigate("/")}
+        src={SeafetyLogo}
+        alt=""
+        srcset=""
+        className="img-seafety"
+      />
 
       <nav>
         <ul className="nav-ul">
-          <li onClick={() => navigate("/")}>Demo</li>
-          <li onClick={() => navigate("/Meio-Ambiente")}>Meio Ambiente</li>
-          <li onClick={() => navigate("/TubAI")}>TubAI</li>
-          <li onClick={() => navigate("/Documentacao")}>Documentação</li>
-          <li onClick={() => navigate("/")}>Contato</li>
-          <li onClick={() => navigate("/Demo")}>
+          <li
+            className={activeLink === "/Demo" ? "active" : ""}
+            onClick={() => {
+              navigate("/Demo");
+              setActiveLink("/Demo");
+            }}
+          >
+            Demo
+          </li>
+          <li
+            className={activeLink === "/Meio-Ambiente" ? "active" : ""}
+            onClick={() => {
+              navigate("/Meio-Ambiente");
+              setActiveLink("/Meio-Ambiente");
+            }}
+          >
+            Meio Ambiente
+          </li>
+          <li
+            className={activeLink === "/TubAI" ? "active" : ""}
+            onClick={() => {
+              navigate("/TubAI");
+              setActiveLink("/TubAI");
+            }}
+          >
+            TubAI
+          </li>
+          <li
+            className={activeLink === "/Documentacao" ? "active" : ""}
+            onClick={() => {
+              navigate("/Documentacao");
+              setActiveLink("/Documentacao");
+            }}
+          >
+            Documentação
+          </li>
+          <li
+            // className={activeLink === "/Meio-Ambiente" ? "active" : ""}
+            // onClick={() => {
+            //   navigate("/");
+            //   setActiveLink("/Demo");
+            // }}
+          >
+            Contato
+          </li>
+          <li
+            // className={activeLink === "/Meio-Ambiente" ? "active" : ""}
+            // onClick={() => {
+            //   navigate("/Demo");
+            //   setActiveLink("/Demo");
+            // }}
+          >
             <Botao>Entrar</Botao>
           </li>
         </ul>
@@ -27,7 +80,5 @@ const Header = (props) => {
     </header>
   );
 };
-
-Header.propTypes = {};
 
 export default Header;

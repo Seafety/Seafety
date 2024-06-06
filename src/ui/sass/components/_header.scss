@@ -7,16 +7,17 @@ header{
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem 5%;
+  padding: 1.5rem 7%;
   .img-seafety{
-    width: 12rem;
+    width: 10rem;
     height: auto;
   }
 
   .nav-ul{
     display: flex;
     flex-direction: row;
-    gap: 1rem;
+    align-items: center;
+    gap: 4rem;
     li{
       list-style: none;
       color: var(--accent-color1);
@@ -24,6 +25,14 @@ header{
       font-size: 1.3rem;
       font-style: normal;
       font-weight: 500;
+      line-height: normal;
+    }
+
+    .active {
+      color: #0182FE;
+      font-size: 1.3rem;
+      font-style: normal;
+      font-weight: 600;
       line-height: normal;
     }
   }
