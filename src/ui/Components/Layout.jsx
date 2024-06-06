@@ -10,9 +10,9 @@ const Layout = ({ children }) => {
 
   const isDarkModePage = location.pathname === "/Meio-Ambiente";
   return (
-      <section className={`layout ${isDarkModePage ? 'dark-theme' : ''}`}>
+    <section className={`layout ${isDarkModePage ? "dark-theme" : ""}`}>
       <section className="header-layout">
-      {isDarkModePage ? <HeaderDark /> : <Header />}
+        {isDarkModePage ? <HeaderDark /> : <Header />}
       </section>
 
       <section className="children-layout">{children}</section>
