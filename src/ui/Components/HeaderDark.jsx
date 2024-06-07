@@ -3,25 +3,24 @@ import PropTypes from "prop-types";
 import { useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 import Botao from "./Botao";
-import LoginModal from './LoginModal';
 
-import SeafetyLogo from "../../Assets/Seafety.svg";
+import SeafetyWhite from "../../Assets/SeafetyWhite.svg";
 
-const Header = ({ onLoginClick }) => {
+const HeaderDark = (props) => {
   const navigate = useNavigate();
   const [activeLink, setActiveLink] = useState("");
   return (
-    <header>
+    <header data-theme="dark" style={{ backgroundColor: 'rgba(0, 0, 0, 0.836)' }} >
       <img
         onClick={() => navigate("/")}
-        src={SeafetyLogo}
+        src={SeafetyWhite}
         alt=""
         srcset=""
         className="img-seafety"
       />
 
       <nav>
-        <ul className="nav-ul">
+        <ul  className="nav-ul">
           <li
             className={activeLink === "/Demo" ? "active" : ""}
             onClick={() => {
@@ -58,12 +57,12 @@ const Header = ({ onLoginClick }) => {
           >
             Documentação
           </li>
-          <li
-          >
+          <li>
             Contato
           </li>
-          <li>
-            <button className='blue-button' onClick={onLoginClick}>Entrar</button>
+          <li
+          >
+            <Botao>Entrar</Botao>
           </li>
         </ul>
       </nav>
@@ -71,4 +70,4 @@ const Header = ({ onLoginClick }) => {
   );
 };
 
-export default Header;
+export default HeaderDark;
