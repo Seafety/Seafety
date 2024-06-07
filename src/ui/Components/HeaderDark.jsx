@@ -17,7 +17,10 @@ const HeaderDark = ({ onLoginClick }) => {
     });
   };
   return (
-    <header data-theme="dark" style={{ backgroundColor: 'rgba(0, 0, 0, 0.836)' }} >
+    <header
+      data-theme="dark"
+      style={{ backgroundColor: "rgba(0, 0, 0, 0.836)" }}
+    >
       <img
         onClick={() => {navigate("/"); setActiveLink("");scrollToTop(); }}
         src={SeafetyWhite}
@@ -27,7 +30,7 @@ const HeaderDark = ({ onLoginClick }) => {
       />
 
       <nav>
-        <ul  className="nav-ul">
+        <ul className="nav-ul">
           <li
             className={activeLink === "/Demo/Dashboard" ? "active" : ""}
             onClick={() => {
@@ -70,7 +73,9 @@ const HeaderDark = ({ onLoginClick }) => {
           </li>
 
           <li>
-            <button className='blue-button' onClick={onLoginClick}>Entrar</button>
+            <button className="blue-button" onClick={onLoginClick}>
+              Entrar
+            </button>
           </li>
         </ul>
       </nav>
