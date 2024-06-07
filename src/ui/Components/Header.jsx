@@ -12,7 +12,7 @@ const Header = (props) => {
   return (
     <header>
       <img
-        onClick={() => navigate("/")}
+        onClick={() => {navigate("/"); setActiveLink("")}}
         src={SeafetyLogo}
         alt=""
         srcset=""
@@ -22,10 +22,10 @@ const Header = (props) => {
       <nav>
         <ul className="nav-ul">
           <li
-            className={activeLink === "/Demo" ? "active" : ""}
+            className={activeLink === "/Demo/Dashboard" ? "active" : ""}
             onClick={() => {
-              navigate("/Demo");
-              setActiveLink("/Demo");
+              navigate("/Demo/Dashboard");
+              setActiveLink("/Demo/Dashboard");
             }}
           >
             Demo
