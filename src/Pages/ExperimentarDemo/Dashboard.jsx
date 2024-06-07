@@ -11,6 +11,7 @@ import world from "../../Assets/Demo/World.png";
 import grafico_pizza_icon from "../../Assets/Demo/grafico-pizza-icon.png";
 import grafico_icon from "../../Assets/Demo/grafico-icon.png";
 import salanidade from "../../Assets/Demo/salanidade.svg";
+import ForecastSection from "../../ui/Components/ForecastSection";
 
 const Dashboard = () => {
   const data = {
@@ -181,6 +182,7 @@ const Dashboard = () => {
           </div>
         </div>
       </section>
+      <ForecastSection />
     </body>
   );
 };
