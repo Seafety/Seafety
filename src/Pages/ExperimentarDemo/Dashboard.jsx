@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import WorldMap from "../../ui/Components/WorldMap";
 import Botao from "../../ui/Components/Botao";
 import Grafico from "../../ui/Components/Grafico";
-
+import SEA_SURFACE_MAP from "../../Assets/Demo/SEA_SURFACE_TEMPERATURE.png"
 const Dashboard = () => {
 
 const data = {
@@ -74,6 +74,22 @@ const options = {
           <Grafico data={data} options={options} />
         </div>
       </section>
+      <section>
+        <h2>Dado Mundiais</h2>
+        <div>
+          <img src={SEA_SURFACE_MAP} alt="" srcset="" />
+          <div>
+
+          </div>
+        </div>
+        <div>
+          <img src="" alt="" srcset="" />
+          <div>
+
+          </div>
+        </div>
+      </section>
+
     </body>
   );
 };
