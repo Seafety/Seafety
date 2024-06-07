@@ -57,9 +57,7 @@ const HeaderDark = (props) => {
           >
             Documentação
           </li>
-          <li>
-            Contato
-          </li>
+
           <li
           >
             <Botao>Entrar</Botao>
