@@ -7,6 +7,11 @@ import box3 from "../../Assets/TubaiAssets/box3.png"
 import icon1 from "../../Assets/TubaiAssets/icon1.png"
 import icon2 from "../../Assets/TubaiAssets/icon2.png"
 import icon3 from "../../Assets/TubaiAssets/icon3.png"
+import exclamacao from "../../Assets/TubaiAssets/exclamation.png"
+import core from "../../Assets/TubaiAssets/heart.png"
+import book from "../../Assets/TubaiAssets/book.png"
+import cloud from "../../Assets/TubaiAssets/cloud.png"
+import medalha from "../../Assets/TubaiAssets/badge.png"
 
 const TubAI = props => {
   return (
@@ -111,24 +116,24 @@ const TubAI = props => {
       </div></div>
 
       {/* BOX3 */}
-      <h1>Insights e Previsões de Sucesso</h1>
-      <div>
-        <div>
-          <div>
-            <div><img src="" alt="" /></div>
+      <h1 className='h1box3'>Insights e Previsões de Sucesso</h1>
+      <div className='boxao3' >
+        <div className='box1box3'>
+          <div className='titulo1'>
+            <div><img src={exclamacao} /></div>
                
-            <div><p>Previsão de Tempestade Costeira</p></div>
+            <div ><b >Previsão de Tempestade Costeira</b></div>
           </div>
           <p>A IA da Seafety analisou dados meteorológicos e marítimos, indicando a formação de uma tempestade severa. Com base em padrões históricos e condições.</p>
           <p><b>Risco:</b> Áreas Vulneráveis</p>
         </div>
 
-        <div>
-          <div>
-            <div>
-            <div><img src="" alt="" /></div>
+        <div className='box2box3'>
+          <div className='turtle'>
+            <div className='titulo1'>
+            <div><img src={core} /></div>
                
-            <div><p>Preservação Ambiental: Tartatuguinhas!</p></div>
+            <div><b>Preservação Ambiental: Tartatuguinhas!</b></div>
             </div>
             <p>A época de desova é regida principalmente pela temperatura, ocorrendo nos períodos mais quentes do ano. Pela análise da nossa IA, prevemos localizações e datas.</p>
           </div>
@@ -141,14 +146,25 @@ const TubAI = props => {
 
       {/* PLANOS */}
 
+
       <div className="plans-container">
+      <h1 className="plans-title">Planos</h1>
       <table className="plans-table">
         <thead>
           <tr>
-            <th>Planos</th>
-            <th>Gratuito</th>
-            <th>Standard</th>
-            <th>Premium</th>
+            <th></th>
+            <th>
+              <img src={book}/>
+              <div>Gratuito</div>
+            </th>
+            <th>
+              <img src={cloud}/>
+              <div>Standard</div>
+            </th>
+            <th>
+              <img src={medalha}/>
+              <div>Premium</div>
+            </th>
           </tr>
         </thead>
         <tbody>
@@ -216,19 +232,19 @@ const TubAI = props => {
       </table>
       <div className="pricing">
         <div className="price-option">
-          <span>Gratuito</span>
-          <button>Gratuito</button>
+          <button className="price-button">Gratuito</button>
         </div>
         <div className="price-option">
-          <span>$64/mês</span>
-          <button>$64/mês</button>
+          <button className="price-button">$64/mês</button>
         </div>
         <div className="price-option">
-          <span>$100/mês</span>
-          <button>$100/mês</button>
+          <button className="price-button">$100/mês</button>
         </div>
       </div>
     </div>
+
+
+
      </div>
   )
 }
