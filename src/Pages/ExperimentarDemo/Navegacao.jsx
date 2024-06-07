@@ -42,8 +42,8 @@ const Navegacao = () => {
             <div className="warning">
               <img src={green_time} alt="" />
               <div className="warning-flex">
-                <strong>Tempestade prevista de 4.000,00km à 5.000,00km.</strong>
-                <p>Vento, Direção: 4.0m/s, 80.0°</p>
+                <strong>Tempo economizado com desvio de rota.</strong>
+                <p>Rota sugerida por IA.</p>
               </div>
             </div>
           </div>
