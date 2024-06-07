@@ -3,10 +3,11 @@ import PropTypes from "prop-types";
 import { useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 import Botao from "./Botao";
+import LoginModal from './LoginModal';
 
 import SeafetyLogo from "../../Assets/Seafety.svg";
 
-const Header = (props) => {
+const Header = ({ onLoginClick }) => {
   const navigate = useNavigate();
   const [activeLink, setActiveLink] = useState("");
   return (
@@ -58,22 +59,11 @@ const Header = (props) => {
             Documentação
           </li>
           <li
-            // className={activeLink === "/Meio-Ambiente" ? "active" : ""}
-            // onClick={() => {
-            //   navigate("/");
-            //   setActiveLink("/Demo");
-            // }}
           >
             Contato
           </li>
-          <li
-            // className={activeLink === "/Meio-Ambiente" ? "active" : ""}
-            // onClick={() => {
-            //   navigate("/Demo");
-            //   setActiveLink("/Demo");
-            // }}
-          >
-            <Botao>Entrar</Botao>
+          <li>
+            <button className='blue-button' onClick={onLoginClick}>Entrar</button>
           </li>
         </ul>
       </nav>
