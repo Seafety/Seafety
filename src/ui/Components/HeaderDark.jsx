@@ -8,17 +8,21 @@ import SeafetyWhite from "../../Assets/SeafetyWhite.svg";
 
 const HeaderDark = ({ onLoginClick }) => {
   const navigate = useNavigate();
-  const [activeLink, setActiveLink] = useState("/Meio-Ambiente");
+  const [activeLink, setActiveLink] = useState("");
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  };
   return (
     <header
       data-theme="dark"
       style={{ backgroundColor: "rgba(0, 0, 0, 0.836)" }}
     >
       <img
-        onClick={() => {
-          navigate("/");
-          setActiveLink("");
-        }}
+        onClick={() => {navigate("/"); setActiveLink("");scrollToTop(); }}
         src={SeafetyWhite}
         alt=""
         srcset=""
@@ -32,6 +36,7 @@ const HeaderDark = ({ onLoginClick }) => {
             onClick={() => {
               navigate("/Demo/Dashboard");
               setActiveLink("/Demo/Dashboard");
+              scrollToTop(); 
             }}
           >
             Demo
@@ -41,6 +46,7 @@ const HeaderDark = ({ onLoginClick }) => {
             onClick={() => {
               navigate("/Meio-Ambiente");
               setActiveLink("/Meio-Ambiente");
+              scrollToTop(); 
             }}
           >
             Meio Ambiente
@@ -50,6 +56,7 @@ const HeaderDark = ({ onLoginClick }) => {
             onClick={() => {
               navigate("/TubAI");
               setActiveLink("/TubAI");
+              scrollToTop(); 
             }}
           >
             TubAI
@@ -59,6 +66,7 @@ const HeaderDark = ({ onLoginClick }) => {
             onClick={() => {
               navigate("/Documentacao");
               setActiveLink("/Documentacao");
+              scrollToTop(); 
             }}
           >
             Documentação
