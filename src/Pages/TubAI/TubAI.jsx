@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import PropTypes from 'prop-types'
 import banner from "../../Assets/TubaiAssets/banner.png"
 import box1 from "../../Assets/TubaiAssets/box1.png"
@@ -14,11 +14,16 @@ import cloud from "../../Assets/TubaiAssets/cloud.png"
 import medalha from "../../Assets/TubaiAssets/badge.png"
 import { Link } from "react-router-dom";
 
-const TubAI = props => {
+const TubAI = (props) => {
+  const scrollToRef = useRef(null);
+
+  const handleScroll = () => {
+    scrollToRef.current.scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
 
     <div className='TubAI'>
-      {/* BANNER */}
 
       <div className='bannertubai'>
         <img src={banner} />
@@ -43,16 +48,16 @@ const TubAI = props => {
               segurança marítimica.</p>
           </div>
 
-          <button className='blue-button' style={{margin: '4%'}}>Explore</button>
+          <button className='blue-button' onClick={handleScroll} style={{margin: '4%'}}>Explore</button>
         </div>
     
-        <div className='txtbanner2'>
+        <div ref={scrollToRef} className='txtbanner2'>
           <p>Nós somos a <b>Seafety</b>.</p>
           <p className='pblue'>o oceano.</p>
           <p className='pbluefade'>o mundo.</p>       
         </div>
 
-      <div className='pbox1'>
+      <div  className='pbox1'>
         <p>O melhor jeito de utilizar a inteligência artificial.
           Para a <b className='pblue'>sustentabilidade.</b></p>
       </div>
