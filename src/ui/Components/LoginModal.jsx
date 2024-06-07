@@ -59,7 +59,7 @@ const LoginModal = ({ isOpen, onClose }) => {
             placeholder='Senha'/>
           </div>
           </div>
-          <Link to="/Demo" onClick={onClose}>
+          <Link to="/Demo/Dashboard" onClick={onClose}>
             <button className="blue-button">Criar Conta</button>
             </Link>
         </form>

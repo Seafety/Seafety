@@ -6,13 +6,19 @@ import Botao from "./Botao";
 
 import SeafetyWhite from "../../Assets/SeafetyWhite.svg";
 
-const HeaderDark = (props) => {
+const HeaderDark = ({ onLoginClick }) => {
   const navigate = useNavigate();
   const [activeLink, setActiveLink] = useState("/Meio-Ambiente");
   return (
-    <header data-theme="dark" style={{ backgroundColor: 'rgba(0, 0, 0, 0.836)' }} >
+    <header
+      data-theme="dark"
+      style={{ backgroundColor: "rgba(0, 0, 0, 0.836)" }}
+    >
       <img
-        onClick={() => {navigate("/"); setActiveLink("")}}
+        onClick={() => {
+          navigate("/");
+          setActiveLink("");
+        }}
         src={SeafetyWhite}
         alt=""
         srcset=""
@@ -20,7 +26,7 @@ const HeaderDark = (props) => {
       />
 
       <nav>
-        <ul  className="nav-ul">
+        <ul className="nav-ul">
           <li
             className={activeLink === "/Demo/Dashboard" ? "active" : ""}
             onClick={() => {
@@ -58,9 +64,10 @@ const HeaderDark = (props) => {
             Documentação
           </li>
 
-          <li
-          >
-            <Botao>Entrar</Botao>
+          <li>
+            <button className="blue-button" onClick={onLoginClick}>
+              Entrar
+            </button>
           </li>
         </ul>
       </nav>
