@@ -1,0 +1,9 @@
+.map-container {
+  height: 70vh;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  margin: auto; /* Centralizar horizontalmente */
+  border: 2px solid #ccc; /* Adicionar uma borda ao mapa */
+  border-radius: 10px; /* Bordas arredondadas */
+}

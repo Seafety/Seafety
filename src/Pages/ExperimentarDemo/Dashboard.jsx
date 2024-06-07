@@ -1,9 +1,12 @@
-import React from 'react'
+import React, { useEffect } from "react";
+import WorldMap from "../../ui/Components/WorldMap";
 
 const Dashboard = () => {
   return (
-    <div>Dashboard</div>
-  )
-}
+    <body>
+      <WorldMap />
+    </body>
+  );
+};
 
-export default Dashboard
+export default Dashboard;
