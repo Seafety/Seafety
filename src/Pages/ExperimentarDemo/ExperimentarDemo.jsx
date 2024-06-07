@@ -1,12 +1,14 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import SubHeaderDemo from '../../ui/Components/SubHeaderDemo'
 
-const ExperimentarDemo = props => {
+const ExperimentarDemo = ({children}) => {
   return (
-    <div>ExperimentarDemo</div>
+    <body>
+      <SubHeaderDemo/>
+      {children}
+    </body>
   )
 }
-
-ExperimentarDemo.propTypes = {}
 
 export default ExperimentarDemo

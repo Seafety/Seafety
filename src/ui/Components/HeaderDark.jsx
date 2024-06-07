@@ -8,11 +8,11 @@ import SeafetyWhite from "../../Assets/SeafetyWhite.svg";
 
 const HeaderDark = (props) => {
   const navigate = useNavigate();
-  const [activeLink, setActiveLink] = useState("");
+  const [activeLink, setActiveLink] = useState("/Meio-Ambiente");
   return (
     <header data-theme="dark" style={{ backgroundColor: 'rgba(0, 0, 0, 0.836)' }} >
       <img
-        onClick={() => navigate("/")}
+        onClick={() => {navigate("/"); setActiveLink("")}}
         src={SeafetyWhite}
         alt=""
         srcset=""
@@ -22,10 +22,10 @@ const HeaderDark = (props) => {
       <nav>
         <ul  className="nav-ul">
           <li
-            className={activeLink === "/Demo" ? "active" : ""}
+            className={activeLink === "/Demo/Dashboard" ? "active" : ""}
             onClick={() => {
-              navigate("/Demo");
-              setActiveLink("/Demo");
+              navigate("/Demo/Dashboard");
+              setActiveLink("/Demo/Dashboard");
             }}
           >
             Demo
