@@ -29,7 +29,6 @@
 
 .box-video {
     position: relative;
-    margin-top: 10%;
     video{
         width: 100%;
         height: auto;
@@ -45,7 +44,7 @@
     text-align: center;
     color: white;
     h1{
-        font-size: 3rem;
+        font-size: 2rem;
         font-weight: 700;
         margin-bottom: 5%;
     }
@@ -112,26 +111,30 @@
     justify-content: space-around;
     margin-top: 10%;
     img{
-        width: 45rem;
+        width: 50%;
         border-radius: 15px;
         height: auto;
+        margin-right: 2%;
+        margin-left: 2%;
     }
 }
 
 .text-container{
     display: flex;
     flex-direction: column;
-    width: 35rem;
+    width: 70%;
     line-height: 2rem;
     margin-top: 2%;
+    margin-right: 2%;
+    margin-left: 2%;
     p{
-        font-size: 1.5rem;
+        font-size: 1.1rem;
         margin-bottom: 4%;
         line-height: 2rem;
     }
     h4{
-        font-size: 3rem;
-        font-weight: '700';
+        font-size: 1.9rem;
+        font-weight: 700;
         margin-bottom: 2%;
         line-height: 3rem;
     }
@@ -157,7 +160,7 @@
 }
 
 .kindafooter {
-    position: relative; /* Container for positioning text */
+    position: relative; 
     width: 100%;
     height: auto;
     margin-top: 15%;
@@ -167,11 +170,11 @@
   }
   
   .text1footer {
-    position: absolute; /* Allows positioning over the image */
-    top: 10%; /* Adjust the top value to position the text at the beginning */
-    left: 5%; /* Adjust the left value to position the text away from the left edge */
-    color: white; /* Adjust the text color */
-    padding: 1rem; /* Padding for better text readability */
+    position: absolute; 
+    top: 10%; 
+    left: 5%;
+    color: white; 
+    padding: 1rem; 
     p {
         font-size: 13;
         font-weight: 400;

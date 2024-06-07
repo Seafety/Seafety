@@ -3,16 +3,27 @@ import PropTypes from "prop-types";
 import { useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 import Botao from "./Botao";
+import LoginModal from './LoginModal';
 
 import SeafetyLogo from "../../Assets/Seafety.svg";
 
-const Header = (props) => {
+const Header = ({ onLoginClick }) => {
   const navigate = useNavigate();
   const [activeLink, setActiveLink] = useState("");
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  };
   return (
     <header>
       <img
-        onClick={() => {navigate("/"); setActiveLink("")}}
+        onClick={() => 
+          {navigate("/"); 
+          setActiveLink(""); 
+          scrollToTop(); }}
         src={SeafetyLogo}
         alt=""
         srcset=""
@@ -23,9 +34,11 @@ const Header = (props) => {
         <ul className="nav-ul">
           <li
             className={activeLink === "/Demo/Dashboard" ? "active" : ""}
-            onClick={() => {
+            onClick={() => 
+              {
               navigate("/Demo/Dashboard");
               setActiveLink("/Demo/Dashboard");
+              scrollToTop(); 
             }}
           >
             Demo
@@ -35,6 +48,7 @@ const Header = (props) => {
             onClick={() => {
               navigate("/Meio-Ambiente");
               setActiveLink("/Meio-Ambiente");
+              scrollToTop(); 
             }}
           >
             Meio Ambiente
@@ -44,6 +58,7 @@ const Header = (props) => {
             onClick={() => {
               navigate("/TubAI");
               setActiveLink("/TubAI");
+              scrollToTop(); 
             }}
           >
             TubAI
@@ -53,27 +68,13 @@ const Header = (props) => {
             onClick={() => {
               navigate("/Documentacao");
               setActiveLink("/Documentacao");
+              scrollToTop(); 
             }}
           >
             Documentação
           </li>
-          <li
-            // className={activeLink === "/Meio-Ambiente" ? "active" : ""}
-            // onClick={() => {
-            //   navigate("/");
-            //   setActiveLink("/Demo");
-            // }}
-          >
-            Contato
-          </li>
-          <li
-            // className={activeLink === "/Meio-Ambiente" ? "active" : ""}
-            // onClick={() => {
-            //   navigate("/Demo");
-            //   setActiveLink("/Demo");
-            // }}
-          >
-            <Botao>Entrar</Botao>
+          <li>
+            <button className='blue-button' onClick={onLoginClick}>Entrar</button>
           </li>
         </ul>
       </nav>

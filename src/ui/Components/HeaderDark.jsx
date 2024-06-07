@@ -6,13 +6,23 @@ import Botao from "./Botao";
 
 import SeafetyWhite from "../../Assets/SeafetyWhite.svg";
 
-const HeaderDark = (props) => {
+const HeaderDark = ({ onLoginClick }) => {
   const navigate = useNavigate();
-  const [activeLink, setActiveLink] = useState("/Meio-Ambiente");
+  const [activeLink, setActiveLink] = useState("");
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  };
   return (
-    <header data-theme="dark" style={{ backgroundColor: 'rgba(0, 0, 0, 0.836)' }} >
+    <header
+      data-theme="dark"
+      style={{ backgroundColor: "rgba(0, 0, 0, 0.836)" }}
+    >
       <img
-        onClick={() => {navigate("/"); setActiveLink("")}}
+        onClick={() => {navigate("/"); setActiveLink("");scrollToTop(); }}
         src={SeafetyWhite}
         alt=""
         srcset=""
@@ -20,12 +30,13 @@ const HeaderDark = (props) => {
       />
 
       <nav>
-        <ul  className="nav-ul">
+        <ul className="nav-ul">
           <li
             className={activeLink === "/Demo/Dashboard" ? "active" : ""}
             onClick={() => {
               navigate("/Demo/Dashboard");
               setActiveLink("/Demo/Dashboard");
+              scrollToTop(); 
             }}
           >
             Demo
@@ -35,6 +46,7 @@ const HeaderDark = (props) => {
             onClick={() => {
               navigate("/Meio-Ambiente");
               setActiveLink("/Meio-Ambiente");
+              scrollToTop(); 
             }}
           >
             Meio Ambiente
@@ -44,6 +56,7 @@ const HeaderDark = (props) => {
             onClick={() => {
               navigate("/TubAI");
               setActiveLink("/TubAI");
+              scrollToTop(); 
             }}
           >
             TubAI
@@ -53,16 +66,16 @@ const HeaderDark = (props) => {
             onClick={() => {
               navigate("/Documentacao");
               setActiveLink("/Documentacao");
+              scrollToTop(); 
             }}
           >
             Documentação
           </li>
+
           <li>
-            Contato
-          </li>
-          <li
-          >
-            <Botao>Entrar</Botao>
+            <button className="blue-button" onClick={onLoginClick}>
+              Entrar
+            </button>
           </li>
         </ul>
       </nav>

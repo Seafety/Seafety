@@ -1,0 +1,342 @@
+.TubAI{
+    font-family: var(--font-family);
+    max-width: 100%;
+}
+.bannertubai{
+    img{
+      position: relative;
+      margin-left: -8.5%;
+      height: auto;
+      width: calc(100% + 16.5%);
+      background-color: black
+    }
+};
+
+.txt1{
+  padding: 6%;
+  h1{
+    color: #FFF;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 34px;
+  }
+}
+
+.txtbanner1{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items:  start;
+    position: absolute;
+    top: 30%; 
+  p{
+    color: var(--accent-color2);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; /* 175% */   
+    width: 179px;
+    height: 58px;
+    flex-shrink: 0;
+  } 
+}
+
+.txts{
+    display: flex;
+}
+
+.txtbanner2{
+    position: absolute;
+    top: 100%;
+    right: 0;
+    margin-right: 2%;
+    gap: 15px;
+    color: var(--accent-color2);
+    display: flex;
+    flex-direction: column;
+    p{
+      font-size: 24px;
+      line-height: 1.2rem;
+      width: 100%;
+      text-align: end;
+    }
+    .pbluefade{
+      color: #0045ac;
+    }
+}
+
+.pblue{
+  color: #0182FE;
+}
+
+.pbox1{
+    color: var(--accent-color1);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 34px;
+    margin-top: 4%;
+    margin-bottom: 4%;
+}
+
+.insidebox{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.imgbox1{
+  width: 90%;
+}
+
+.box1{
+    max-width: fit-content;
+    height: auto;
+    padding: 2%;
+    margin-right: 5%;
+    border-radius: 15px;
+    background: var(--accentcolor2);
+    box-shadow: 0px 4px 13.4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.links{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  h3{
+    text-align: center;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px; 
+ }
+}
+
+.btnlinks{
+    width: 100%;
+    height: 49px;
+    border-radius: 15px;
+    background: #000;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    font-family: var(--font-family);
+    border: 3px solid black;
+    color: var(--accent-color2);
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    p{
+      font-size: 15px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 16px;
+  }
+}
+.btnlinks:hover{
+    background-color: var(--accent-color2);
+    color: var(--accent-color1);
+}
+
+.icons-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 7%;
+    margin-bottom: 7%;
+}
+
+.box2div1{
+  h1 {
+    color: #000; 
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px; 
+}
+  p{
+    color: #000;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+  }
+}
+ .box2div2{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex: 1 0 0;
+}
+.twoicon{
+    display: flex;
+    gap: 10%;
+}
+ .icon{
+    display: flex;
+    padding: 3%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1 0 0;
+    text-align: center;
+    width: 50%;
+    h4, p{
+      margin-top: 5%;
+    }
+ }
+
+.insights{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+    gap: 40px;
+}
+  
+h1{
+  color: var(--accent-color1);
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 48px; 
+}
+
+.titleinsight{
+  margin-bottom: 2%;
+}
+
+.prevision{
+    width: 50%;
+    height: 225px;
+    flex-shrink: 0;
+    border-radius: 15px;
+    background: #F9F9F9;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 2%;
+    padding: 2%;
+}
+
+ .preservations{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  p{
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+  .turtle{
+    width: 100%;
+    height: 161px;
+    flex-shrink: 0;
+    border-radius: 15px;
+    background: #F9F9F9;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 25px;
+}
+}
+
+ .titulo1{
+    display: flex;
+    align-items: center;
+    img{
+      margin-right: 2%;
+    }
+ }
+
+.btnbbox3{
+    color: var(--accent-color2);
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 28px;
+    width: 100%;
+    height: 42px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: #000;
+    font-family: var(--font-family);
+    cursor: pointer;
+}
+
+.plans-container {
+    max-width: 100%;
+    text-align: center;
+    font-family: var(--font-family);
+  }
+  
+  .plans-title {
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 10%;
+    margin-top: 10%;
+  }
+  
+  .plans-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 5%;
+  }
+  
+  .plans-table th,
+  .plans-table td {
+    border: 1px solid #f3f3f3;
+    padding: 10px;
+  }
+  
+  .plans-table th {
+    background-color: #f4f4f4;
+    font-weight: normal;
+    text-align: center;
+  }
+  
+  .plans-table th .icon {
+    display: block;
+    width: 24px;
+    height: 24px;
+  }
+  
+  .plans-table th div {
+    margin-top: 5px;
+  }
+  
+  .plans-table td {
+    text-align: center;
+    vertical-align: middle;
+    font-size: 1.2em;
+  }
+  
+  .plans-table td:first-child {
+    text-align: left;
+  }
+
+  .price-option {
+    text-align: center;
+  }
+  
+  .price-button {
+    padding: 10px 20px;;
+    cursor: pointer;
+    border: 2px solid var(--accent-color1);
+    background-color: var(--accent-color1);
+    color: var(--accent-color2);
+    border-radius: 5px;
+    font-size: 1em;
+    transition: all .2s ease-in-out;
+    font-family: var(--font-family);
+    margin-top: 5%;
+  }
+  
+  .price-button:hover {
+    background-color: white;
+    color: var(--accent-color1);
+    border: 2px solid var(--accent-color1);
+  }
+  
