@@ -5,6 +5,8 @@ import TubAI from "./Pages/TubAI/TubAI";
 import Documentacao from "./Pages/Documentacao/Documentacao";
 import ExperimentarDemo from "./Pages/ExperimentarDemo/ExperimentarDemo";
 import Layout from "./ui/Components/Layout";
+import Dashboard from "./Pages/ExperimentarDemo/Dashboard";
+import Navegacao from "./Pages/ExperimentarDemo/Navegacao";
 
 function Router() {
   return (
@@ -15,7 +17,8 @@ function Router() {
           <Route path="/Meio-Ambiente" element={<MeioAmbiente />} />
           <Route path="/TubAI" element={<TubAI />} />
           <Route path="/Documentacao" element={<Documentacao />} />
-          <Route path="/Demo" element={<ExperimentarDemo />} />
+          <Route path="/Demo/Dashboard" element={<ExperimentarDemo><Dashboard/></ExperimentarDemo>} />
+          <Route path="/Demo/Navegacao" element={<ExperimentarDemo><Navegacao/></ExperimentarDemo>} />
         </Routes>
       </Layout>
     </BrowserRouter>
