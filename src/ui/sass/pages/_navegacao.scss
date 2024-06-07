@@ -21,12 +21,13 @@ body {
     width: 100%;
     height: auto;
     gap: 2rem;
+    border-bottom: 1px solid #cfcfcf;
 
     .info-container {
       width: 90%;
-      margin-top: 1.9rem;
-      height: 100%;
+      height: auto;
       display: flex;
+      margin: 1.9rem 0;
       flex-direction: column;
       justify-content: space-between;
       .details {
@@ -95,8 +96,39 @@ body {
             margin: 0;
             color: var(--accent-color3);
           }
+          strong {
+            color: var(--blue-destaque);
+          }
         }
       }
     }
+  }
+
+  .navios{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 2rem 0 5rem 0;
+    align-items: center;
+    justify-content: space-between;
+    li{
+      list-style: none;
+      padding: 3rem 0 1rem 3rem;
+      color: #000;
+      font-family: var(--font-family);
+      font-size: 2rem;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 37px;
+      border-bottom: 1px solid rgba(1, 130, 254, 0.4);
+    }
+  }
+  .demo-alert {
+    color: #777;
+    text-align: center;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
   }
 }

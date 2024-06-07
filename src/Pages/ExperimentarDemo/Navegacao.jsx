@@ -49,6 +49,13 @@ const Navegacao = () => {
           </div>
         </div>
       </section>
+      <ul  className="navios">
+        <li>Navio CN02EW</li>
+        <li>Navio EN03PR</li>
+        <li>Navio NB03LP</li>
+      </ul>
+      <p className="demo-alert">Isso é apenas um protótipo, essa funcionalidade não é usável. <br />
+      Outras navegações não estão disponíveis.</p>
     </body>
   );
 };
