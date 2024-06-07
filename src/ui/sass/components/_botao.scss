@@ -1,11 +1,21 @@
 .blue-button{
   padding: 0.7rem 2rem ;
   background-color: var(--blue-destaque);
-  color: var(--accent-color2);
+  color: white;
   border: none;
-  border-radius: 1.3rem;
-  font-size: 1.3rem;
+  border-radius: 1.5rem;
+  font-size: 1.1rem;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 600;
   line-height: normal;
+  cursor: pointer;
+  border: solid 3px transparent;
+  transition: all 0.2s cubic-bezier(.77, 0, .175, 1);
+}
+
+.blue-button:hover{
+    background-color: transparent;
+    border: solid 3px var(--blue-destaque);
+    border-radius: 1.5rem;
+    color: var(--blue-destaque);
 }

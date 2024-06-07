@@ -1,40 +1,62 @@
-
-header{
+header {
   width: 100%;
   height: auto;
-  backdrop-filter: blur(7.5px);
+  backdrop-filter: blur(5.5px);
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding: 1.5rem 7%;
-  .img-seafety{
+  padding: 0.4rem 7%;
+  position: fixed;
+  z-index: 1 !important;
+  background-color: var(--headercolor);
+}
+
+  .img-seafety {
     width: 10rem;
     height: auto;
+    cursor: pointer;
   }
 
-  .nav-ul{
+  nav ul.nav-ul {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 4rem;
-    li{
+    gap: 3rem;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+
+    li {
       list-style: none;
       color: var(--accent-color1);
       font-family: var(--font-family);
-      font-size: 1.3rem;
+      font-size: 1rem;
       font-style: normal;
       font-weight: 500;
       line-height: normal;
+      height: 90px;
+      justify-content: center;
+      display: flex;
+      align-items: center;
+      border-bottom: 1px solid transparent;
+      transition: border-color 0.3s cubic-bezier(0.77, 0, 0.175, 1);
+    }
+    li:hover {
+      border-bottom-color: #0182fe;
+      color: rgb(73, 73, 73);
     }
 
-    .active {
-      color: #0182FE;
-      font-size: 1.3rem;
+    li.active {
+      color: #0182fe !important;
+      font-size: 1rem;
       font-style: normal;
       font-weight: 600;
       line-height: normal;
     }
+
+    li:last-child {
+      border-bottom: none; /* Remove a borda inferior do último li */
+    }
   }
-}
 
