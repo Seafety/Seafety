@@ -28,7 +28,7 @@ const LoginModal = ({ isOpen, onClose }) => {
         <h5>Já é membro? Entre.</h5>
         <form>
             <div className='all-login'>
-        <div className='box1'>
+        <div className='login123'>
             <div className='form-group'>
                 <label></label>
                 <input className='input-login'
