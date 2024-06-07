@@ -58,10 +58,6 @@ const Header = ({ onLoginClick }) => {
           >
             Documentação
           </li>
-          <li
-          >
-            Contato
-          </li>
           <li>
             <button className='blue-button' onClick={onLoginClick}>Entrar</button>
           </li>
