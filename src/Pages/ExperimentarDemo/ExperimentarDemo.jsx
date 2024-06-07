@@ -1,12 +1,10 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-const ExperimentarDemo = props => {
+const ExperimentarDemo = ({page}) => {
   return (
     <div>ExperimentarDemo</div>
   )
 }
-
-ExperimentarDemo.propTypes = {}
 
 export default ExperimentarDemo
