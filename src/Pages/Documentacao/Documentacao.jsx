@@ -14,7 +14,7 @@ import circle from "../../Assets/PageAssets/circle.png"
 const Documentacao = props => {
   return (
     <div className='documentacao'>      
-    <div className='banner-container'>
+    <div className='bannercontainer2'>
       <img className='bannerDoc' src={docBanner} />
       <div className='docbutton'>
       <h1>Confira a nossa documentação</h1> 
