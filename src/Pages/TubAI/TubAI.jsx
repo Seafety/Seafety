@@ -1,19 +1,23 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import banner from "../../Assets/TubaiAssets/banner.png"
-
-
+import box1 from "../../Assets/TubaiAssets/box1.png"
+import box2 from "../../Assets/TubaiAssets/box2.png"
+import box3 from "../../Assets/TubaiAssets/box3.png"
+import icon1 from "../../Assets/TubaiAssets/icon1.png"
+import icon2 from "../../Assets/TubaiAssets/icon2.png"
+import icon3 from "../../Assets/TubaiAssets/icon3.png"
 
 const TubAI = props => {
   return (
 
-    <>
+    <div className='TubAI'>
       {/* BANNER */}
 
       <div className='bannertubai'>
-        img = {banner};
+   
         <div className='txtbanner1'>
-
+          <div className='txts'>
           <div className='txt1'>
             <h1>57 mil</h1>
             <p>Litros de combustível economizados</p>
@@ -23,7 +27,7 @@ const TubAI = props => {
             <h1>90TB</h1>
             <p>de dados analisados
               pela nossa inteligência.</p>
-          </div>
+          </div></div>
 
           <div className='txt3'>
             <h1>67%</h1>
@@ -31,15 +35,18 @@ const TubAI = props => {
               segurança marítimica.</p>
           </div>
 
-
+          <button className='btnbanner'>Explore</button>
         </div>
+
+       
 
         <div className='txtbanner2'>
-          <p>Nós somos a Seafety.</p>
-          <p>o oceano.</p>
-          <p>o mundo.</p>
+          <p>Nós somos a <b>Seafety</b>.</p>
+          <p className='pblue'>o oceano.</p>
+          <p className='pbluefade'>o mundo.</p>
 
-        </div>
+        </div> 
+        
       </div>
       
       {/* BOX1 */}
@@ -47,58 +54,61 @@ const TubAI = props => {
 
       <div className='pbox1'>
         <p>O melhor jeito de utilizar a inteligência artificial.
-          Para a sustentabilidade.</p>
+          Para a <b className='pblue'>sustentabilidade.</b></p>
       </div>
       
-      <div className='links'>
-        <div className='box1'>
-          <h3>Rotas Otimizadas.</h3>
-          <img className='imgbox1' src="" alt="" />
-          <button className='btnlinks'>Rotas</button>
-        </div>
+      <div className='links'> 
+          <div className='box1'>
+            <h3>Rotas <b className='pblue'>Otimizadas</b>.</h3>
+            <img className='imgbox1' src={box1} />
+            <button className='btnlinks'><p className='pbtn'>Rotas</p></button>
+          </div>
         
         <div className='box2'>
-          <h3>Analise Oceânicas.</h3>
-          <img className='imgbox1' src="" alt="" />
-          <button className='btnlinks'>Dashboard</button>
+          <h3>Analise <b className='pblue'>Oceânicas</b>.</h3>
+          <img className='imgbox2' src={box2} />    
+          <button className='btnlinks'><p className='pbtn'>Dashboard</p></button>
         </div>
 
         <div className='box3'>
-          <h3>Oceano Seguro.</h3>
-          <img className='imgbox1' src="" alt="" />
-          <button className='btnlinks'>Seafety</button>
+          <h3>Oceano <b className='pblue'>Seguro</b>.</h3>
+          <img className='imgbox3' src={box3} />
+          <button className='btnlinks'><p className='pbtn'>Seafety</p></button>
         </div>
       </div>
 
       
       {/* BOX2 */}
+      <div className='boxao2'>
       <div className='box2div1'>
-        <h1>Como a TubAI pode te ajudar hoje?</h1>
+        <h1>Como a <b className='pblue'>TubAI</b> pode</h1> 
+        <h1>te ajudar hoje?</h1>
         <p>Palavras chaves da nossa tecnologia</p>
       </div>
 
       <div className='box2div2'>
-        <div>
-          <div>
-            <img src="" alt="" />
-            <h3>Banco de Dados</h3>
+        <div className='twoicon'>
+          <div className='icon'>
+            <img src={icon1} />
+            <h4>Banco de Dados</h4>
             <p>Guardamos dados de diversas fontes.</p>
             </div>
             
-          <div>
-            <img src="" alt="" />
-            <h3>Formar Padrões</h3>
+          <div className='icon'>
+            <img src={icon2}  />
+            <h4>Formar Padrões</h4>
             <p>Identificamos padrões na natureza oceanica.</p>
           </div> 
             
         </div>
 
-        <div>
-            <img src="" alt="" />
-            <h3>Análise Preventiva</h3>
+          <div className='icon3'>
+          
+            <img src={icon3}  />
+            <h4 >Análise Preventiva</h4>
             <p>Tendências para a melhor tomada de decisões.</p>
         </div>
-      </div>
+      </div></div>
 
       {/* BOX3 */}
       <h1>Insights e Previsões de Sucesso</h1>
@@ -219,7 +229,7 @@ const TubAI = props => {
         </div>
       </div>
     </div>
-      </>
+     </div>
   )
 }
 
