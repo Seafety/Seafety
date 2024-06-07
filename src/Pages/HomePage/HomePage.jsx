@@ -3,20 +3,32 @@ import PropTypes from "prop-types"
 import teste1 from "../../Assets/HomeAssets/teste1.png"
 import imgcomofunciona from "../../Assets/HomeAssets/imgcomofunciona.svg"
 import parceiros from "../../Assets/HomeAssets/parceiros.png"
+import right from "../../Assets/HomeAssets/right.png"
+import left from "../../Assets/HomeAssets/left.png"
+import { Link } from "react-router-dom";
 
 const HomePage = props => {
   return (
     <div className="Home">
-      
-      <div className='banner-container'>
-        <video src=""></video>
-        <p className="txt-container-home">Transformando dados oceânicos em soluções inteligentes para um futuro sustentável.</p>
-        <button className="btn-banner">Saiba mais</button>
+    <div className="banner-container">
+      <video className="home-video" 
+      preload="auto"
+            autoplay=""
+            loop
+            muted
+            playsInline>
+        <source src='https://s3-figma-videos-production-sig.figma.com/video/1359687156048822209/TEAM/d0fd/3273/-e78c-441e-8a63-641eabadb344?Expires=1718582400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=M4eCo6fwgoEEx7ZQQyJc6DuQkxIXshybA5shbOqF7EWv8b9WKx8a3pnW9wrBLZMtxkD72P5~w-XGRflXNpgLbwjHhrxh8YUvlfFYV9DIUATbs1G6NuJTW97JIzJNy6wLNQUrVRP2kzMWHMUGOcPYyCXvkNHmdrJRThPRuwJWiHBfE77MFJHIUKWjNlxLWHUut~7P1DTrE2uEflrQJBHmIZXQcafMXKwbPGyOPzSP8C2q6RPHw9dZ6hJWE3yj4olYBPALOudJ8v-KHASO0jVZuz13cnx4vrw4KI6fEGoPca9ahmOhGwIXD8O54jWDu2vnyLMFImxM3zvWRKYavjv5AQ__' type='video/mp4'></source>
+      </video>
+      <div className="banner-content">
+        <p className="text-container-home">Transformando dados oceânicos em soluções inteligentes para um futuro sustentável.</p>
+        <Link to="/TubAI"><button className="btn-banner">Saiba mais</button></Link>
       </div>
+    </div>
+  
 
       <div className="container-inovacao">
         <div className="div-txt-inovacao">
-          <h3 className="box-titulo">Nossa <b className="txt-destaque">Inovação</b>.</h3>
+          <h3 className="box-titulo1">Nossa <b className="txt-destaque">Inovação</b>.</h3>
           <p>Desenvolvemos uma IA que utiliza dados da internet para prever catástrofes oceânicas, mudanças ambientais (temperatura, pH) e variações nas populações de espécies, promovendo a gestão sustentável e a preservação dos ecossistemas marinhos.</p>
         </div>
 
@@ -31,22 +43,22 @@ const HomePage = props => {
                 <img className='imgcomofunciona' src={imgcomofunciona}/>
               </div>
             <div>
-              <div className="txt-como-funciona-1">
+              <div className="comofunciona-textos">
+              <div className="txt-como-funciona">
                 <h3>Coleta de Dados</h3>
                 <p>A IA coleta e processa grandes volumes de dados de fontes confiáveis na internet, incluindo informações climáticas,
                    dados de poluição, registros de espécies marinhas, e muito mais.</p>
               </div>
 
-              <div className="txt-como-funciona-2">
-                <h3>Coleta de Dados</h3>
-                 <p>A IA coleta e processa grandes volumes de dados de fontes confiáveis na internet, incluindo informações climáticas,
-                  dados de poluição, registros de espécies marinhas, e muito mais.</p>
+              <div className="txt-como-funciona">
+                <h3>Análise de Padrões</h3>
+                 <p>Utilizando algoritmos de aprendizado de máquina, a IA identifica padrões emergentes que podem indicar potenciais ameaças ou mudanças nos ecossistemas marinhos.</p>
               </div>
 
-              <div className="txt-como-funciona-3">
-              <h3>Coleta de Dados</h3>
-                 <p className="txt-box-comof">A IA coleta e processa grandes volumes de dados de fontes confiáveis na internet, incluindo informações climáticas,
-                  dados de poluição, registros de espécies marinhas, e muito mais.</p>
+              <div className="txt-como-funciona">
+              <h3>Previsões</h3>
+                 <p className="txt-box-comofunciona">Nossa IA prevê derramamentos de óleo, tempestades, tsunamis, alterações nas populações de espécies, migrações, riscos de extinção e mudanças na temperatura da água, pH, e salinidade.</p>
+                  </div>
               </div>
             </div>
 
@@ -82,18 +94,22 @@ const HomePage = props => {
       <h3 className="box-titulo"><b className="txt-destaque">Pitch</b>.</h3>
       <div className="container-pitch">
 
-      <div className="box-video">
-      <video src=""></video>
-      </div>
-      
-      <button className="btn-demo">Experimente a Demo</button>
+      <iframe className="video-pitch" width="560" height="315" src="https://www.youtube.com/embed/vkxAyI2OOzM?si=XN5vtbO9WX_TnxZ3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+      </iframe>
+   
+      <Link to="/Demo"><button className="blue-button">Experimente a Demo</button></Link>
       </div>
 
       <h3 className="box-titulo">Nossos <b className="txt-destaque">Parceiros</b>.</h3>
 
-      <img className="img-parceiros" src={parceiros} />
+      <div className="parceiros"><img className="img-parceiros" src={parceiros} /></div>
 
-      <div><p>Juntos, transformamos dados em esperança, promovendo práticas sustentáveis e cuidando do coração azul da Terra. Nosso compromisso é com um <b className="txt-destaque">futuro onde a natureza e a tecnologia coexistem em harmonia</b>, garantindo que as próximas gerações possam desfrutar da beleza e riqueza dos mares.</p></div>
+      <div className="nos"><p>Juntos, transformamos dados em esperança, promovendo práticas sustentáveis e cuidando do coração azul da Terra. Nosso compromisso é com um <b className="txt-destaque">futuro onde a natureza e a tecnologia coexistem em harmonia</b>, garantindo que as próximas gerações possam desfrutar da beleza e riqueza dos mares.</p></div>
+
+      <div className="rightleft">
+        <img className='left' src={left}></img>
+        <img className='right' src={left}></img>
+      </div>
 
     </div>
   )
