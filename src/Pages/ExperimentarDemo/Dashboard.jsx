@@ -1,8 +1,47 @@
 import React, { useEffect } from "react";
 import WorldMap from "../../ui/Components/WorldMap";
 import Botao from "../../ui/Components/Botao";
+import Grafico from "../../ui/Components/Grafico";
 
 const Dashboard = () => {
+
+const data = {
+  labels: ['01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12'],
+  datasets: [
+    {
+      type: 'bar',
+      label: 'Altitude (mm)',
+      data: [100, 120, 80, 140, 150, 170, 160, 140, 130, 110, 90, 80],
+      backgroundColor: 'rgba(54, 162, 235, 0.6)',
+    },
+    {
+      type: 'line',
+      label: 'Temperatura (°C)',
+      data: [20, 22, 18, 25, 26, 28, 27, 25, 23, 20, 18, 17],
+      borderColor: 'rgba(255, 99, 132, 1)',
+      borderWidth: 2,
+      fill: false,
+    },
+  ],
+};
+
+const options = {
+  responsive: true,
+  plugins: {
+    legend: {
+      position: 'top',
+    },
+    title: {
+      display: true,
+      text: 'Altitude (mm) e Temperatura (°C)',
+    },
+  },
+  scales: {
+    y: {
+      beginAtZero: true,
+    },
+  },
+};
   return (
     <body>
       <h3 className="welcome">Bem vindo(a) a bordo.</h3>
@@ -31,7 +70,9 @@ const Dashboard = () => {
           </div>
           <p className="dash-map-data-button">Analisar</p>
         </section>
-        <div className="dash-graph"></div>
+        <div className="dash-graph">
+          <Grafico data={data} options={options} />
+        </div>
       </section>
     </body>
   );
