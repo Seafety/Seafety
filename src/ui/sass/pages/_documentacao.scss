@@ -1,0 +1,99 @@
+.bannerDoc{
+    width: calc(100% + 28.12%);
+    height: auto;
+    padding: 0;
+    margin-left: -20%;
+}
+
+.documentacao{
+    font-family: var(--font-family);
+    background-color: var(--accentcolor1);
+    h1{
+        margin-left: 10%;
+    }
+}
+
+.titledoc{
+    margin-top: 5%;
+}
+
+.docbutton {
+    position: absolute;
+    top: 50%; 
+    left: 30%;
+    transform: translate(-50%, -50%); 
+    text-align: start;
+    color: white;
+}
+
+.docbutton h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 32px;
+    margin-bottom: 10%;
+    margin-top: 10%;
+}
+
+.elements-zip{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    align-items: center;
+    margin-bottom: 10%;
+    img{
+        width: 120px;
+    }
+    
+}
+
+.boxteam {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+    .participants {
+      display: flex;
+      justify-content: space-around;
+      width: 100%;
+    }
+  
+    .team {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative; 
+      margin: 20px;
+    }
+  
+    .image-container {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .participant {
+      width: 215px;
+      height: 215px;
+      border-radius: 50%;
+      z-index: 1; 
+    }
+  
+    .ball {
+      position: absolute;
+      width: 250px;
+      height: auto;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 0;
+    }
+  
+    h2, p {
+      margin: 10px 0;
+      text-align: center;
+      margin-top: 10%;
+    }
+  }
+  

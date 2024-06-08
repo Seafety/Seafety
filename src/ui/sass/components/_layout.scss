@@ -1,0 +1,27 @@
+.layout {
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: 7% auto 7%;
+  grid-template-rows: auto;
+  grid-template-areas:
+  "headerSection headerSection headerSection"
+  ". children ."
+  "footer footer footer";
+  .header-layout {
+    grid-area: headerSection;
+    width: 100%;
+  }
+  .children-layout{
+    grid-area: children;
+    margin-top: 8rem;
+  }
+  .footer-layout{
+    grid-area: footer;
+  }
+
+  &.dark-theme {
+    background-color: black; // Aplica o fundo escuro
+    color: white; // Aplica a cor do texto escuro
+}
+}

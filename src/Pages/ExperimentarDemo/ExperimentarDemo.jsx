@@ -1,9 +1,14 @@
-const ExperimentarDemo = () => {
+import React from 'react'
+import PropTypes from 'prop-types'
+import SubHeaderDemo from '../../ui/Components/SubHeaderDemo'
+
+const ExperimentarDemo = ({children}) => {
   return (
-    <h1>
-      ExperimentarDemo
-    </h1>
+    <body>
+      <SubHeaderDemo/>
+      {children}
+    </body>
   )
 }
 
-export default ExperimentarDemo ;
+export default ExperimentarDemo
