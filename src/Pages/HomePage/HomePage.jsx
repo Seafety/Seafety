@@ -150,7 +150,7 @@ const HomePage = (props) => {
           allowfullscreen
         ></iframe>
 
-        <Link to="/Demo">
+        <Link to="/Demo/Dashboard">
           <button className="blue-button">Experimente a Demo</button>
         </Link>
       </div>
