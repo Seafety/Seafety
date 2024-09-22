@@ -12,6 +12,9 @@ import circle from "../../Assets/PageAssets/circle.png";
 import diver from "../../Assets/PageAssets/diver.png";
 import girlcode from "../../Assets/PageAssets/girlcode.png";
 import boycode from "../../Assets/PageAssets/boycode.png";
+import video from "../../Assets/meioambiente.mp4";
+import video2 from "../../Assets/meioambiente2.mp4";
+
 
 const MeioAmbiente = (props) => {
   return (
@@ -26,10 +29,11 @@ const MeioAmbiente = (props) => {
             muted
             playsInline
           >
-            <source
+            {/* <source
               src="https://s3-figma-videos-production-sig.figma.com/video/1359687156048822209/TEAM/4787/3453/-9379-4afc-a029-99fa26f269d8?Expires=1718582400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=fgbN20-cEns-6S1t3DDt9xhKBU-ipLGL6wXasGr2EaUD7WFMzppb7YxO83iIBWUuGFKI9A8PWLvLOYOeUCGzKWlTp7b2tG0MWKyyFfcngR3Fsq7Wq6c6phLwPHiNKTArYMpleW71ND~9B0jLJmA4~KmS0PXrYWzJ8QgBwhzaWSGnDZsLb4Ls4H1ZALt63m7Q-0hVgWiUgxN~FgUoadvSK-VQzNoAE3-V4XvZQTHCl5~js6CtROZHHPkW7d4PdMxcoPcWIcl88ifB6qPgM1jdTneLeeGRST-ndkvxKH395j9useyFk8oZcVjVJ4kvasz1Xi~YIvL-GGXvGzp7z-tSZg__"
               type="video/mp4"
-            ></source>
+            ></source> */}
+            <source src={video} type="video/mp4"></source>
           </video>
           <div className="text-overlay">
             <p>
@@ -79,10 +83,11 @@ const MeioAmbiente = (props) => {
             muted
             playsInline
           >
-            <source
+            {/* <source
               src="https://s3-figma-videos-production-sig.figma.com/video/1359687156048822209/TEAM/fe58/0340/-e277-4a36-8bdc-fada41e22c07?Expires=1718582400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=l04Q9KegO2yk1E-TnFhdo-Y0~Dnq6ZdBcv5u82XyewdU0F4jLyJXX37~FMC8TP0ya1gVTeLoZUVZ3GKSXmhK6-V0Hl92OqMewHC90aQMxV2Pz0Y9yc6OaXlechf4mCI14NhMh4s8Y1nj6906~E7HFwA6lXpSl8~xULLo5b0oVBOlCcc46NaiOsqa9n7JNgjrrrPOW-72XGy7XRMRW8fxDJ6Glp~DzOuXBsteWzu5DfmlRzvGae9gBRAWIkwJ8cO5LbVhKbY2lwXy20r38XiiKOGIP0KtlgyAQ7abBdrSAyb9UrWGOtNg4iCojz5rSfGpz9IN6xZRPcd8KhFXZNGA7g__"
               type="video/mp4"
-            ></source>
+            ></source> */}
+            <source src={video2} type="video/mp4"></source>
           </video>
           <div className="text-overlay">
             <h1>
