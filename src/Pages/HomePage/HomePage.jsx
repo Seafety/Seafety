@@ -5,6 +5,7 @@ import imgcomofunciona from "../../Assets/HomeAssets/imgcomofunciona.svg";
 import parceiros from "../../Assets/HomeAssets/parceiros.png";
 import right from "../../Assets/HomeAssets/right.png";
 import left from "../../Assets/HomeAssets/left.png";
+import video from "../../Assets/home.mp4";
 import { Link } from "react-router-dom";
 
 const HomePage = (props) => {
@@ -19,10 +20,7 @@ const HomePage = (props) => {
           muted
           playsInline
         >
-          <source
-            src="https://s3-figma-videos-production-sig.figma.com/video/1359687156048822209/TEAM/d0fd/3273/-e78c-441e-8a63-641eabadb344?Expires=1718582400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=M4eCo6fwgoEEx7ZQQyJc6DuQkxIXshybA5shbOqF7EWv8b9WKx8a3pnW9wrBLZMtxkD72P5~w-XGRflXNpgLbwjHhrxh8YUvlfFYV9DIUATbs1G6NuJTW97JIzJNy6wLNQUrVRP2kzMWHMUGOcPYyCXvkNHmdrJRThPRuwJWiHBfE77MFJHIUKWjNlxLWHUut~7P1DTrE2uEflrQJBHmIZXQcafMXKwbPGyOPzSP8C2q6RPHw9dZ6hJWE3yj4olYBPALOudJ8v-KHASO0jVZuz13cnx4vrw4KI6fEGoPca9ahmOhGwIXD8O54jWDu2vnyLMFImxM3zvWRKYavjv5AQ__"
-            type="video/mp4"
-          ></source>
+          <source src={video} type="video/mp4"></source>
         </video>
         <div className="banner-content">
           <p className="text-container-home">
